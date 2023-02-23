@@ -1,0 +1,25 @@
+﻿@using Ornk.Classes;
+@model HashSet<string>
+@{
+    ViewData["Title"] = "Resim Ekleme";
+}
+
+<h1>Resim Galerisi</h1>
+<form method="post" enctype="multipart/form-data" >
+    <div class="d-flex align-items-center">
+        <label for="formFile" class="me-2">Resim : </label>
+        <input name="resim" value="resim" type="file" class="form-control w-auto me-3" id="formFile" required />
+        <input name="resim" value="resim" type="text" class="form-control w-auto me-3" pid="formFile" placeholder="Dosya Ad..." required />
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Yükle</button>
+</form>
+
+<div class="row mt-5">
+    @foreach(string ad in Model)
+    {
+        <div class="col-sm-3 text-center mb-2">
+            <img src="~/img/@ad" alt="resim" height="100" />
+        </div>
+    }
+</div>

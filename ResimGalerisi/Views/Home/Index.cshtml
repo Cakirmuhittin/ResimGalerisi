@@ -1,0 +1,32 @@
+﻿
+@model ResimViewModel
+
+@{
+    ViewData["Title"] = "Resim Galerisi";
+}
+@if(!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <div asp-validation-summary="All"></div>
+    </div>
+}
+<h1>Resim Galerisi</h1>
+<form method="post" enctype="multipart/form-data">
+    <div class="d-flex align-items-center">
+        <label for="formFile" class="me-2">Resim : </label>
+        <input asp-for="Dosya" type="file" class="form-control w-auto me-3" id="formFile" required />
+        <label for="formFile" class="me-2">Başlık : </label>
+        <input asp-for="Baslik" type="text" class="form-control w-auto me-3" pid="formFile" placeholder="Başlık..." required />
+        <button class="btn btn-primary">Yükle</button>
+    </div>
+</form>
+
+<div class="row">
+    @foreach(var item in Model.Resims)
+    {
+        <div class="col-sm-2">
+        <img src="~/img/@item.DosyaAd" alt="Resim" class="w-100"/>
+            <h4>@item.Baslik</h4>
+        </div>
+    }
+</div>

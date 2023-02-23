@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResimGalerisi", "ResimGalerisi\ResimGalerisi.csproj", "{B3602ADD-3078-49DB-A3DA-126DF9C32A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ornk", "Ornk\Ornk.csproj", "{06B6D241-0F49-4833-8976-D00659616FA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3602ADD-3078-49DB-A3DA-126DF9C32A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3602ADD-3078-49DB-A3DA-126DF9C32A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3602ADD-3078-49DB-A3DA-126DF9C32A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3602ADD-3078-49DB-A3DA-126DF9C32A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B6D241-0F49-4833-8976-D00659616FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B6D241-0F49-4833-8976-D00659616FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B6D241-0F49-4833-8976-D00659616FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B6D241-0F49-4833-8976-D00659616FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5106F150-9C14-47CF-95F8-CBE116C60C0F}
+	EndGlobalSection
+EndGlobal
